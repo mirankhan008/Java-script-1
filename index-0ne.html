@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+<title> Mark Of A Student </title>
+
+	<style>
+
+.outer{
+	transform: translateY(82%);
+	--webkit--transform: translateY(82%);
+	--moz--transform: translateY(82%);
+}
+
+h1{
+	text-align: center;
+	text-transform: capitalize;
+	color: #7dab69;
+}
+.input{
+	display: block;
+	padding: 5px 5px;
+	border: 1px solid #198316;
+	border-radius: 27px;
+	width: 155px;
+	margin: 20px auto;
+}
+.button{
+    display: block;
+    margin: 15px auto;
+    width: 100px;
+    padding: 7px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border-radius: 37px;
+    border: 1px solid #74ab69;
+    color: #2c2020;
+}
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+<div class="outer">
+
+<h1>Enter Marks:</h1>
+
+<form NAME="formlebel" ACTION="" METHOD="GET">
+       <input TYPE="text" NAME="inputbox" VALUE="" class="input" placeholder="Number">
+       <input TYPE="button" NAME="button1" Value="click" onClick="clickbutton(this.form)" class="button">
+</form>
+</div>
+
+<script>
+	
+ function clickbutton (form) {
+    var a =form.inputbox.value;
+    
+if(a>=80&&a<=100)
+	alert("your grading is 	A+");
+
+else if(a>=70&&a<=79)
+	alert("your grading is A");
+else if(a>=60&&a<=69)
+	alert("your grading is A-");
+else if(a>=50&&a<=59)
+	alert("your grading is B");
+else if(a>=40&&a<=49)
+	alert("your grading is C");
+else if(a>=33&&a<=39)
+	alert("your grading is D");
+else 
+	alert("your grading is F");
+}
+
+</script>
+</body>
+</html>

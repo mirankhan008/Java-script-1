@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title> Odd and Even </title>
+
+	<style>
+
+.outer{
+	transform: translateY(82%);
+	--webkit--transform: translateY(82%);
+	--moz--transform: translateY(82%);
+}
+
+h1{
+	text-align: center;
+	text-transform: capitalize;
+	color: #7dab69;
+}
+.input{
+	display: block;
+	padding: 5px 5px;
+	border: 1px solid #198316;
+	border-radius: 27px;
+	width: 155px;
+	margin: 20px auto;
+}
+.button{
+    display: block;
+    margin: 15px auto;
+    width: 100px;
+    padding: 7px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border-radius: 37px;
+    border: 1px solid #74ab69;
+    color: #2c2020;
+}
+
+
+</style>
+
+
+
+
+</head>
+
+
+<body>
+<div class="outer">
+
+<h1>Enter Number:</h1>
+
+<form NAME="formlebel" ACTION="" METHOD="GET">
+       <input TYPE="text" NAME="inputbox" VALUE="" class="input" placeholder="Number">
+       <input TYPE="button" NAME="button1" Value="click" onClick="clickbutton(this.form)" class="button">
+</form>
+</div>
+<script>
+	
+	function clickbutton (form) {
+    var i =form.inputbox.value;
+    
+if(i>=1&&i<=100)
+{
+	 if (i%2 == 0)
+{
+    alert("even");
+}
+else
+{
+     alert("odd");
+}
+}
+else 
+alert("out of range");
+}
+
+
+</script>
+</body>
+</html>
